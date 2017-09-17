@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class TeammanagementConfig(AppConfig):
-    name = 'teammanagement'
+class ApiConfig(AppConfig):
+    name = 'api'
