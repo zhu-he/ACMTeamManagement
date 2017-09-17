@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'base',
     'contest',
     'wiki',
+    'notification',
+    'board',
 ]
 
 MIDDLEWARE = [

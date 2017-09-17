@@ -1,5 +1,4 @@
 from django.db import models
-from base.models import Member
 
 class OJ(models.Model):
     name = models.CharField(max_length=64, unique=True)
@@ -51,7 +50,7 @@ class ScoreItem(models.Model):
 
 class Alias(models.Model):
     name = models.CharField(max_length=64)
-    member = models.ForeignKey(Member)
+    member = models.ForeignKey('base.Member')
     oj = models.ForeignKey(OJ)
 
     class Meta:
